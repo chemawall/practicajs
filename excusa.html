@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>OMG!
+    <p id="excusa">My dog eat my homework</p>
+ 
+    <script>
+        document.getElementById("excusa").innerHTML=onLoad();      
+function onLoad(){
+    let who = ['the dog','my granma','his turtle','my bird'];
+    let what = ['eat','pissed', 'crushed', 'broked'];
+    let when = ['before the class', 'right in time','when i finished', 'during my lunch','while i was praying'];
+    let randomNumberWho = Math.floor(Math.random()*4);
+	let randomNumberWhat = Math.floor(Math.random()*4);
+	let randomNumberWhen = Math.floor(Math.random()*5);
+    let inicio = who[randomNumberWho];
+	let nudo = what[randomNumberWhat];
+	let desenlace = when[randomNumberWhen];
+   
+    return  inicio+' '+nudo+' '+desenlace;
+}
+console.log(onLoad());
+    
+    </script>
+    
+</body>
+</html>
